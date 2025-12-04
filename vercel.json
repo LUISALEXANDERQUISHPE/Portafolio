@@ -8,6 +8,18 @@
       "key": "NEXT_PUBLIC_SITE_URL",
       "description": "The public URL of your portfolio",
       "value": "https://yourportfolio.com"
+    },
+    {
+      "key": "NEXT_PUBLIC_EMAILJS_SERVICE_ID",
+      "description": "EmailJS Service ID for contact form"
+    },
+    {
+      "key": "NEXT_PUBLIC_EMAILJS_TEMPLATE_ID",
+      "description": "EmailJS Template ID for contact form"
+    },
+    {
+      "key": "NEXT_PUBLIC_EMAILJS_PUBLIC_KEY",
+      "description": "EmailJS Public Key for contact form"
     }
   ],
   "headers": [

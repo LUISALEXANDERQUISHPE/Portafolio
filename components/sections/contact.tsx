@@ -27,15 +27,15 @@ export function Contact() {
 
     try {
       await emailjs.send(
-        'service_fiit0wm',       
-        'template_ka6y9s7',    
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,       
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,    
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
           to_name: 'Luis Alexander Quishpe', 
         },
-        '8r_QtN0PmEB_ts_Z7'       
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!       
       )
 
       setSubmitted(true)
