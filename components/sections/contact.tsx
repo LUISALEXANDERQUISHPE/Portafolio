@@ -112,7 +112,7 @@ export function Contact() {
               <MapPin className="w-6 h-6 text-primary dark:text-dark-primary shrink-0 mt-1" aria-hidden="true" />
               <div>
                 <h3 className="font-semibold text-foreground dark:text-dark-foreground mb-1">{t("contact.address")}</h3>
-                <p className="text-muted-foreground dark:text-dark-muted-foreground">Victor Hugo - Av.Los Atis <br /> Ambato- Tungurahua - Ecuador </p>
+                <p className="text-muted-foreground dark:text-dark-muted-foreground"> Píllaro- Tungurahua - Ecuador </p>
               </div>
             </div>
           </motion.div>
