@@ -6,16 +6,16 @@ import { Code2, Database, Palette, Zap } from "lucide-react"
 
 const skillsData = {
   en: [
-    { category: "Frontend", icon: Palette, skills: ["React", "Vite", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn"] },
-    { category: "Backend", icon: Database, skills: ["Springboot", ".Net", "Java", "Nestjs", "PostgreSQL", "MySQL", "REST APIs", "Grcp"] },
-    { category: "Mobile", icon: Database, skills: ["React Native", "Android Studio"] },
+    { category: "Frontend", icon: Palette, skills: ["React", "Vite", "Angular", "Java Script", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn"] },
+    { category: "Backend", icon: Database, skills: ["Springboot", "C# (.NET Core)", "Python", "Java", "Nestjs", "PostgreSQL", "MySQL", "REST APIs", "Grcp"] },
+    { category: "Mobile", icon: Database, skills: ["React Native", "Android Studio", ".NET MAUI", "Flutter"] },
     { category: "Tools", icon: Code2, skills: ["Git", , "Github", "Azure", "Trello", "Docker", "Vercel", "Render", "Neon"] },
     { category: "Other", icon: Zap, skills: ["Visual Studio Code", "Visual Studio", "Intellij IDE", "NetBeans", "Scrumb", "Kanban"] },
   ],
   es: [
-    { category: "Frontend", icon: Palette, skills: ["React", "Vite", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn"] },
-    { category: "Backend", icon: Database, skills: ["Springboot", ".Net", "Java", "Nest.js", "PostgreSQL", "MySQL", "REST APIs", "Grcp"] },
-    { category: "Mobile", icon: Database, skills: ["React Native", "Android Studio"] },
+    { category: "Frontend", icon: Palette, skills: ["React", "Vite", "Angular", "Java Script", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn"] },
+    { category: "Backend", icon: Database, skills: ["Springboot", "C# (.NET Core)", "Python", "Java", "Nest.js", "PostgreSQL", "MySQL", "REST APIs", "Grcp"] },
+    { category: "Mobile", icon: Database, skills: ["React Native", "Android Studio", ".NET MAUI", "Flutter"] },
     { category: "Herramientas", icon: Code2, skills: ["Git", "Github", "Azure", "Trello", "Docker", "Vercel", "Render", "Neon"] },
     { category: "Otros", icon: Zap, skills: ["Visual Studio Code", "Visual Studio", "Intellij IDE", "NetBeans", "Scrumb", "Kanban"] },
   ],
