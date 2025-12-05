@@ -9,61 +9,14 @@ import { SkipLink } from "@/components/skip-link"
 const openSans = Open_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Professional Portfolio | Developer & Designer",
+  title: "Mi portafolio - Luis Quishpe",
   description:
-    "Explore my professional portfolio showcasing web development projects, skills, and experience. Available in English and Spanish.",
-  keywords: ["portfolio", "developer", "web development", "React", "Next.js", "full-stack", "projects"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
-  publisher: "Your Name",
-  formatDetection: {
-    email: false,
-    telephone: false,
-    address: false,
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://yourportfolio.com",
-    siteName: "Professional Portfolio",
-    title: "Professional Portfolio | Developer & Designer",
-    description: "Explore my professional portfolio showcasing web development projects, skills, and experience.",
-    images: [
-      {
-        url: "https://yourportfolio.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Portfolio Preview",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Professional Portfolio | Developer & Designer",
-    description: "Explore my professional portfolio showcasing web development projects, skills, and experience.",
-    images: ["https://yourportfolio.com/og-image.jpg"],
-    creator: "@yourhandle",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+    " Portafolio profesional de Luis Quishpe, desarrollador full-stack especializado en React y Next.js. Explora mis proyectos, habilidades y experiencia en desarrollo web.",
+  keywords: ["portfolio", "developer", "web development", "React", "Next.js", "full-stack", "projects", "  skills", "Luis Quishpe"],
+  authors: [{ name: "Luis Quishpe" }],
+  creator: "Luis Quishpe",
+  publisher: " Luis Quishpe",
   viewport: "width=device-width, initial-scale=1",
-  alternates: {
-    canonical: "https://yourportfolio.com",
-    languages: {
-      en: "https://yourportfolio.com/en",
-      es: "https://yourportfolio.com/es",
-    },
-  },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -86,16 +39,15 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Your Name",
-              url: "https://yourportfolio.com",
-              image: "https://yourportfolio.com/professional-profile-photo-man.jpg",
+              name: "Luis Alexander Quishpe",
+              url: "https://portafolioluisalexandere.vercel.app/",
+              image: "https://portafolioluisalexandere.vercel.app/profile.jpg",
               jobTitle: "Full Stack Developer",
               sameAs: [
-                "https://github.com/yourprofile",
-                "https://linkedin.com/in/yourprofile",
-                "https://twitter.com/yourhandle",
+                "https://github.com/LUISALEXANDERQUISHPE",
+                "https://www.linkedin.com/in/luis-alexander-quishpe-chicaiza-940a77264/",
               ],
-              description: "Professional portfolio showcasing web development projects, skills, and experience.",
+              description: "Portafolio profesional de Luis Quishpe, desarrollador full-stack especializado en React y Next.js. Explora mis proyectos, habilidades y experiencia en desarrollo web.",
             }),
           }}
         />
