@@ -1,47 +1,45 @@
+.words {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 28px;
+}
 
-.words{
-   position: relative;
-   overflow: hidden;
-   width: 100%;
-   height:40px ;
+.word {
+  display: block;
+  height: 100%;
+  line-height: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: spin 10s infinite;
 }
-.word{
-   display: block;
-   height: 100%;
-   padding-left: 6px;
-   line-height: 20px;
-   font-weight: 500;
-   font-size: 22px;
-   letter-spacing: 1px;
-   color: rgb(248, 204, 61);
-   animation: spin 7s infinite;
-}
+
+/* Cada frase se queda quieta un momento y luego sube a la siguiente */
 @keyframes spin {
-  0% {
-    transform: translateY(0%);  /* Primer texto estable al inicio */
-  }
+  0%,
   20% {
-    transform: translateY(0%);  /* Hold del primero */
+    transform: translateY(0%);
   }
-  25% {
-    transform: translateY(-100%);  /* Transición rápida al segundo */
-  }
+  25%,
   45% {
-    transform: translateY(-100%);  /* Hold del segundo */
+    transform: translateY(-100%);
   }
-  50% {
-    transform: translateY(-200%);  /* Transición al tercero */
-  }
+  50%,
   70% {
-    transform: translateY(-200%);  /* Hold del tercero */
+    transform: translateY(-200%);
   }
-  75% {
-    transform: translateY(-300%);  /* Transición al cuarto */
-  }
+  75%,
   95% {
-    transform: translateY(-300%);  /* Hold del cuarto */
+    transform: translateY(-300%);
   }
   100% {
-    transform: translateY(-400%);  /* Finaliza en el cuarto, pero el infinite lo resetea a 0% */
+    transform: translateY(-400%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word {
+    animation: none;
   }
 }

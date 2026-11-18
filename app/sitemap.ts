@@ -1,24 +1,13 @@
 import type { MetadataRoute } from "next"
+import { site } from "@/lib/site"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://yourportfolio.com",
+      url: site.url,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 1,
-    },
-    {
-      url: "https://yourportfolio.com/en",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: "https://yourportfolio.com/es",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
     },
   ]
 }
